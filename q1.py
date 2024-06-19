@@ -37,6 +37,8 @@ def get_average(numberid):
             average = 0
 
         return jsonify({
+            'windowPrevState': [],
+            'windowCurrState':[],
             'numbers': numbers,
             'average': average,
             'fetch_time': fetch_time
